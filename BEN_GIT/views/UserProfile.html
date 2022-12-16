@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content= "width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../images/main_page_bg.jpg">
+    <link rel="stylesheet" href="../index.css">
+    <title>User Profile</title>
+</head>
+<body>
+<nav class="topnav">
+    <ul>
+        <li><a href="../views/MainPage.html">Home</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">User Profile</a>
+            <div class="dropdown-content">
+                <a href="../views/UserProfile.html">My profile</a>
+                <a href="../views/login.html">Sign Out</a>
+            </div>
+        </li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">About</a></li>
+    </ul>
+</nav>
+
+<div class = "userprofilePage">
+    <h1>User Practices</h1>
+    <div class="outer-wrapper"></div>
+    <div class="table-wrapper"></div>
+    <table id="table">
+        <thead>
+        <tr>
+            <th col-index = 1>Time</th>
+            <select class="table-filter">
+                <option value="all"></option>
+            </select>
+            <th col-index = 2>First Name</th>
+            <select class="table-filter">
+                <option value="all"></option>
+            </select>
+            <th col-index = 3>Last Name</th>
+            <select class="table-filter">
+                <option value="all"></option>
+            </select>
+            <th col-index = 4>Practice</th>
+            <select class="table-filter">
+                <option value="all"></option>
+            </select>
+            <th col-index = 5>Score</th>
+            <select class="table-filter">
+                <option value="all"></option>
+            </select>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>15/12/22 10:23:48</td>
+            <td>Dor</td>
+            <td>Levi</td>
+            <td>Animals</td>
+            <td>7/10</td>
+            </tr>
+        <tr>
+            <td>11/12/23 08:23:48</td>
+            <td>Itay</td>
+            <td>Cohen</td>
+            <td>Animals</td>
+            <td>9/10</td>
+        </tr>
+        <tr>
+            <td>10/12/23 10:53:28</td>
+            <td>Itay</td>
+            <td>Dalot</td>
+            <td>Colors</td>
+            <td>6/10</td>
+        </tr>
+        <tr>
+            <td>10/12/23 20:15:22</td>
+            <td>David</td>
+            <td>Cohen</td>
+            <td>Animals</td>
+            <td>4/10</td>
+        </tr>
+        <tr>
+            <td>07/12/23 09:48:37</td>
+            <td>Itay</td>
+            <td>Cohen</td>
+            <td>Animals</td>
+            <td>10/10</td>
+        </tr>
+        <tr>
+            <td>13/12/23 15:30:10</td>
+            <td>Dor</td>
+            <td>Levi</td>
+            <td>Grammer</td>
+            <td>3/10</td>
+        </tr>
+        <tr>
+            <td>10/12/23 10:27:09</td>
+            <td>Itay</td>
+            <td>Cohen</td>
+            <td>Grammer</td>
+            <td>5/10</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+
+    <script src="../UserProfile.js"></script>
+    <script src="../index.js"></script>
+</html>

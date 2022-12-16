@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content= "width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../images/main_page_bg.jpg">
+    <link rel="stylesheet" href="../index.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="topnav" id="login-nav">
+        <ul>
+            <li><a href="../views/MainPage.html">Home</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">User Profile</a>
+                <div class="dropdown-content">
+                    <a href="">My profile</a>
+                    <a href="">Sign Out</a>
+                </div>
+            </li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <form class = "login-form" id= "login" name="login">
+            <h1 class="form__title">Login</h1>
+
+            <div class="form__input-group">
+                <label>User name</label>
+                <input type="text" class="form__input" id="login-username" autofocus placeholder="User name" name="username">
+            </div>
+
+            <div class="form__input-group">
+                <label>Password</label>
+                <input type="password" class="form__input" id="login-password" autofocus placeholder="Password" name="password">
+            </div>
+
+            <button class="form-button" type="submit" onclick="validateUser()">Sign In</button>
+
+            <p class="form-text">
+                <a href="#" class="form-link">Forgot your password?</a>
+            </p>
+
+            <p class="form-text">
+                <a class="form-link" id="linkCreateAccount">Dont Have An Account?</a>
+            </p>
+
+        </form>
+
+        <form class = "signup-form" id= "createAccount" name="createAccount">
+            <h1 class="form__title">Sign Up</h1>
+
+            <div class="form__input-group">
+                <label>First name</label>
+                <input type="text" class="form__input" id="firstname" autofocus placeholder="First name">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form__input-group">
+                <label>Last name</label>
+                <input type="text" class="form__input" id="lastname" autofocus placeholder="Last name">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form__input-group">
+                <label>User name</label>
+                <input type="text" class="form__input" id="username" autofocus placeholder="User name">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form__input-group">
+                <label>Password</label>
+                <input type="password" class="form__input" id="password" autofocus placeholder="Password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form__input-group">
+                <label>Confirm Password</label>
+                <input type="password" class="form__input" id="cpassword" autofocus placeholder="Confirm Password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <button class="form-button" type="submit">Create Account</button>
+
+            <p class="form-text">
+                <a class="form-link" id="linkLogin">Already Have An Account</a>
+            </p>
+        </form>
+    </div>
+    <script src="../login.js"></script>
+    <script src="../index.js"></script>
+</body>
+</html>

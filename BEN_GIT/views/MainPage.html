@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content= "width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../images/main_page_bg.jpg">
+    <link rel="stylesheet" href="../index.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+<nav class="topnav">
+    <ul>
+        <li><a href="../views/MainPage.html">Home</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">User Profile</a>
+            <div class="dropdown-content">
+                <a href="../views/UserProfile.html">My profile</a>
+                <a href="../views/login.html">Sign Out</a>
+            </div>
+        </li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">About</a></li>
+    </ul>
+</nav>
+
+<div class="home_page_container">
+    <button class="practice__button" type="submit" onclick="QuizPage()">Practice</button>
+
+    <button class="profile__button" type="submit" onclick="UserProfilePage()">Profile</button>
+</div>
+
+</body>
+
+    <script src="../MainPage.js"></script>
+    <script src="../index.js"></script>
+</html>
